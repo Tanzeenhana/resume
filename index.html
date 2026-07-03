@@ -1,169 +1,436 @@
-<div class="resume-preview">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaikh Tanzeen Hana - Resume</title>
 
-    <!-- Header -->
-    <div style="text-align:center;margin-bottom:30px;">
-        <h2 style="font-size:42px;letter-spacing:1px;">SHAIKH TANZEEN HANA</h2>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <div class="title">
-            <i class="fas fa-laptop-code"></i>
-            B.E. CSE Student • IoT Developer • Cybersecurity Enthusiast • AI & ML
-        </div>
+<style>
 
-        <div class="contact">
-            <span><i class="fas fa-phone"></i> +91 7337791810</span>
-            <span><i class="fas fa-envelope"></i> shaikhtanzeenhana@gmail.com</span>
-            <span><i class="fas fa-map-marker-alt"></i> Karnataka, India</span>
-        </div>
-    </div>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    <div class="grid">
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f3f7fd;
+padding:30px;
+}
 
-        <!-- LEFT COLUMN -->
+.resume-card{
+max-width:1100px;
+margin:auto;
+background:#fff;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
 
-        <div>
+.resume-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 35px;
+border-bottom:1px solid #eee;
+background:#fff;
+}
 
-            <div class="section">
-                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+.resume-header h1{
+color:#173d72;
+}
 
-                <ul>
+.btn{
+padding:12px 22px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+margin-left:10px;
+}
 
-                    <li>
-                        <b>B.E Computer Science (ICB)</b><br>
-                        Alva's Institute of Engineering & Technology<br>
-                        <span style="color:#2a6df4;">CGPA : 7.0 | 2023 - Present</span>
-                    </li>
+.view{
+background:#eef3ff;
+}
 
-                    <li>
-                        <b>PUC (KSEEB)</b><br>
-                        Alva's PU College<br>
-                        <span style="color:#2a6df4;">69%</span>
-                    </li>
+.download{
+background:#173d72;
+color:#fff;
+}
 
-                    <li>
-                        <b>SSLC (CBSE)</b><br>
-                        Al Furqan School<br>
-                        <span style="color:#2a6df4;">CGPA : 5.3</span>
-                    </li>
+.resume-body{
+padding:35px;
+}
 
-                </ul>
+.resume-preview{
+background:#fafcff;
+border:1px solid #dfe8f4;
+border-radius:20px;
+padding:35px;
+}
 
-            </div>
+h2{
+font-size:40px;
+color:#0b1e33;
+letter-spacing:1px;
+}
 
+.title{
+font-size:20px;
+color:#2a6df4;
+margin:10px 0 25px;
+padding-bottom:12px;
+border-bottom:2px solid #e5edf7;
+}
 
-            <div class="section">
+.contact{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+background:#eef5ff;
+padding:15px 20px;
+border-radius:40px;
+margin-bottom:35px;
+}
 
-                <h3><i class="fas fa-code"></i> Skills</h3>
+.contact span{
+font-size:15px;
+}
 
-                <div class="tags">
+.contact i{
+color:#2a6df4;
+margin-right:6px;
+}
 
-                    <span class="tag">Python</span>
-                    <span class="tag">C</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Rust</span>
-                    <span class="tag">TensorFlow</span>
-                    <span class="tag">OpenCV</span>
-                    <span class="tag">MediaPipe</span>
-                    <span class="tag">MongoDB</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">GitHub</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">Linux</span>
-                    <span class="tag">Arduino</span>
-                    <span class="tag">ESP32</span>
+.grid{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:35px;
+}
 
-                </div>
+.section{
+margin-bottom:28px;
+}
 
-            </div>
+.section h3{
+color:#173d72;
+border-bottom:2px solid #dfe8f4;
+padding-bottom:8px;
+margin-bottom:15px;
+}
 
+.section ul{
+list-style:none;
+}
 
-            <div class="section">
+.section li{
+margin-bottom:12px;
+line-height:1.6;
+}
 
-                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
 
-                <ul>
+.tag{
+background:#e8f1ff;
+padding:8px 14px;
+border-radius:30px;
+font-size:13px;
+font-weight:600;
+transition:.3s;
+}
 
-                    <li>✔ Basics of Python – Infosys Springboard</li>
-                    <li>✔ Google – Bits & Bytes of Networking</li>
-                    <li>✔ IBM – Computer Networks & Security</li>
-                    <li>✔ Agile Project Management – Google</li>
-                    <li>✔ Speak English Professionally</li>
-                    <li>✔ Team Lead – Jagruthi Hackathon 2024</li>
+.tag:hover{
+background:#2a6df4;
+color:#fff;
+}
 
-                </ul>
+.job{
+background:#eef5ff;
+padding:15px;
+border-left:5px solid #2a6df4;
+border-radius:12px;
+margin-bottom:15px;
+}
 
-            </div>
+@media(max-width:768px){
 
-        </div>
+.grid{
+grid-template-columns:1fr;
+}
 
-        <!-- RIGHT COLUMN -->
+.contact{
+border-radius:15px;
+}
 
-        <div>
+}
 
-            <div class="section">
+</style>
 
-                <h3><i class="fas fa-user"></i> About Me</h3>
+</head>
 
-                <p style="line-height:1.8;text-align:justify;">
-                    Motivated Computer Science student passionate about IoT,
-                    Cybersecurity, Artificial Intelligence and Machine Learning.
-                    Experienced in developing secure embedded systems, real-time
-                    monitoring applications and computer vision solutions while
-                    continuously learning modern software technologies.
-                </p>
+<body>
 
-            </div>
+<div class="resume-card">
 
+<div class="resume-header">
 
-            <div class="section">
+<h1>
+<i class="fas fa-file-user"></i>
+Resume
+</h1>
 
-                <h3><i class="fas fa-diagram-project"></i> Projects</h3>
+<div>
 
-                <div style="background:#eef5ff;padding:15px;border-radius:15px;margin-bottom:15px;">
-                    <b>Smart Hand Hygiene Compliance System</b><br>
-                    <small>ESP32 • Firebase • Flutter • IoT</small>
-                    <p>Real-time sanitizer monitoring system with cloud synchronization and Flutter dashboard.</p>
-                </div>
+<button class="btn view"
+onclick="document.querySelector('.resume-preview').scrollIntoView({behavior:'smooth'})">
 
-                <div style="background:#eef5ff;padding:15px;border-radius:15px;margin-bottom:15px;">
-                    <b>Smart Vision Stick</b><br>
-                    <small>Arduino • GPS • Ultrasonic Sensors</small>
-                    <p>Assistive navigation system providing obstacle detection and GPS tracking for visually impaired users.</p>
-                </div>
+<i class="fas fa-eye"></i>
+View
 
-                <div style="background:#eef5ff;padding:15px;border-radius:15px;">
-                    <b>Hand Sign Recognition System</b><br>
-                    <small>OpenCV • TensorFlow • MediaPipe</small>
-                    <p>AI-powered real-time hand gesture recognition system for accessibility applications.</p>
-                </div>
+</button>
 
-            </div>
+<button class="btn download"
+onclick="window.print()">
 
+<i class="fas fa-download"></i>
+Download
 
-            <div class="section">
-
-                <h3><i class="fas fa-laptop"></i> Technical Expertise</h3>
-
-                <p><b>Programming</b><br>
-                Python • C • C++ • JavaScript • Rust</p>
-
-                <p><b>AI & Machine Learning</b><br>
-                TensorFlow • Keras • OpenCV • MediaPipe • Pandas • NumPy</p>
-
-                <p><b>Cybersecurity</b><br>
-                Threat Detection • Secure System Design • SOC • CTF • Phishing Analysis</p>
-
-                <p><b>Databases</b><br>
-                MongoDB • MySQL</p>
-
-                <p><b>Developer Tools</b><br>
-                Linux • Docker • Git • GitHub • VS Code • Google Colab • Jupyter Notebook</p>
-
-            </div>
-
-        </div>
-
-    </div>
+</button>
 
 </div>
+
+</div>
+
+<div class="resume-body">
+
+<div class="resume-preview">
+
+<h2>SHAIKH TANZEEN HANA</h2>
+
+<div class="title">
+
+B.E. CSE Student | IoT Developer | Cybersecurity Enthusiast | AI & Machine Learning
+
+</div>
+
+<div class="contact">
+
+<span><i class="fas fa-phone"></i> +91 7337791810</span>
+
+<span><i class="fas fa-envelope"></i> shaikhtanzeenhana@gmail.com</span>
+
+<span><i class="fas fa-map-marker-alt"></i> Karnataka, India</span>
+
+</div>
+
+<div class="grid">
+
+<!-- LEFT COLUMN -->
+
+<div>
+
+<div class="section">
+
+<h3><i class="fas fa-graduation-cap"></i> Education</h3>
+
+<ul>
+
+<li>
+
+<b>B.E Computer Science (ICB)</b><br>
+
+Alva's Institute of Engineering and Technology<br>
+
+CGPA: <b>7.0</b> (2023 – Present)
+
+</li>
+
+<li>
+
+<b>PUC (KSEEB)</b><br>
+
+Alva's PU College<br>
+
+69%
+
+</li>
+
+<li>
+
+<b>SSLC (CBSE)</b><br>
+
+Al Furqan School<br>
+
+CGPA: 5.3
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h3><i class="fas fa-code"></i> Skills</h3>
+
+<div class="tags">
+
+<span class="tag">Python</span>
+<span class="tag">C</span>
+<span class="tag">C++</span>
+<span class="tag">JavaScript</span>
+<span class="tag">Rust</span>
+<span class="tag">TensorFlow</span>
+<span class="tag">Keras</span>
+<span class="tag">OpenCV</span>
+<span class="tag">MediaPipe</span>
+<span class="tag">MongoDB</span>
+<span class="tag">MySQL</span>
+<span class="tag">Git</span>
+<span class="tag">GitHub</span>
+<span class="tag">Docker</span>
+<span class="tag">Linux</span>
+<span class="tag">ESP32</span>
+<span class="tag">Arduino</span>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h3><i class="fas fa-certificate"></i> Certifications</h3><div class="section">
+
+<h3><i class="fas fa-user"></i> About Me</h3>
+
+<p style="line-height:1.8;text-align:justify;">
+
+Motivated Computer Science student with practical experience in IoT systems,
+cybersecurity fundamentals, AI/ML, and blockchain-based applications.
+Passionate about developing secure, scalable software solutions using embedded
+systems, computer vision, and modern technologies. Strong problem-solving,
+teamwork, and communication skills with a continuous learning mindset.
+
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h3><i class="fas fa-diagram-project"></i> Projects</h3>
+
+<div class="job">
+
+<b>Smart Hand Hygiene Compliance System</b><br><br>
+
+<small><b>Technologies:</b> ESP32, Firebase, Flutter, IoT, Arduino IDE</small>
+
+<p style="margin-top:8px;">
+Developed an IoT-based hand hygiene monitoring system using ESP32 and Firebase
+for real-time compliance tracking. Integrated ultrasonic and IR sensors to
+detect sanitizer usage and built a Flutter dashboard for cloud-based monitoring.
+</p>
+
+</div>
+
+<div class="job">
+
+<b>Smart Vision Stick</b><br><br>
+
+<small><b>Technologies:</b> Arduino UNO, GPS, Ultrasonic Sensors, Embedded C</small>
+
+<p style="margin-top:8px;">
+Designed an assistive navigation system for visually impaired users with
+real-time obstacle detection, vibration alerts, and GPS-based location tracking.
+</p>
+
+</div>
+
+<div class="job">
+
+<b>Hand Sign Recognition System</b><br><br>
+
+<small><b>Technologies:</b> OpenCV, MediaPipe, TensorFlow, Keras</small>
+
+<p style="margin-top:8px;">
+Developed a real-time hand gesture recognition system using computer vision
+and deep learning to convert sign language into readable text with high
+accuracy.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+
+<p><b>Programming Languages:</b> Python, C, C++, JavaScript, Rust</p>
+<br>
+
+<p><b>AI & Machine Learning:</b> TensorFlow, Keras, OpenCV, MediaPipe,
+NumPy, Pandas, Scikit-learn</p>
+<br>
+
+<p><b>Cybersecurity:</b> Threat Detection, Phishing Analysis,
+SOC Workflows, Secure System Design, CTF</p>
+<br>
+
+<p><b>Web Technologies:</b> HTML, CSS</p>
+<br>
+
+<p><b>Databases:</b> MongoDB, MySQL</p>
+<br>
+
+<p><b>Tools & Platforms:</b> Linux, Docker, Git, GitHub,
+Google Colab, Jupyter Notebook, VS Code</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+<ul>
+
+<li>Basics of Python – Infosys Springboard</li>
+
+<li>Google – Bits & Bytes of Computer Networking</li>
+
+<li>IBM – Computer Networks and Network Security</li>
+
+<li>Google – Agile Project Management</li>
+
+<li>Speak English Professionally</li>
+
+<li>Team Lead – Jagruthi Hackathon 2024</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- RIGHT COLUMN STARTS HERE -->
+<div>
